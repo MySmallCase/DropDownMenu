@@ -15,6 +15,9 @@
 		1F62BC8C1BE5F1B8005555D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F62BC8A1BE5F1B8005555D9 /* LaunchScreen.storyboard */; };
 		1F62BC971BE5F1B9005555D9 /* DropDownMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F62BC961BE5F1B9005555D9 /* DropDownMenuTests.m */; };
 		1F62BCA21BE5F1B9005555D9 /* DropDownMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F62BCA11BE5F1B9005555D9 /* DropDownMenuUITests.m */; };
+		1F62BCB61BE6043D005555D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F62BCB41BE6043D005555D9 /* Localizable.strings */; };
+		1F62BCBA1BE60443005555D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F62BCB81BE60443005555D9 /* Localizable.strings */; };
+		1FE8CE541BEA198D001C97B9 /* DropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8CE531BEA198D001C97B9 /* DropDownMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		1F62BC9D1BE5F1B9005555D9 /* DropDownMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropDownMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F62BCA11BE5F1B9005555D9 /* DropDownMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownMenuUITests.m; sourceTree = "<group>"; };
 		1F62BCA31BE5F1B9005555D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F62BCB51BE6043D005555D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		1F62BCB91BE60443005555D9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = Localizable.strings; sourceTree = "<group>"; };
+		1FE8CE521BEA198D001C97B9 /* DropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownMenu.h; sourceTree = "<group>"; };
+		1FE8CE531BEA198D001C97B9 /* DropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 		1F62BC7B1BE5F1B8005555D9 /* DropDownMenu */ = {
 			isa = PBXGroup;
 			children = (
+				1F62BCAF1BE5F1F0005555D9 /* DropDownMenu */,
 				1F62BC7F1BE5F1B8005555D9 /* AppDelegate.h */,
 				1F62BC801BE5F1B8005555D9 /* AppDelegate.m */,
 				1F62BC821BE5F1B8005555D9 /* ViewController.h */,
@@ -117,6 +125,8 @@
 		1F62BC7C1BE5F1B8005555D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F62BCB71BE60443005555D9 /* zh-Hans.lproj */,
+				1F62BCB31BE6043D005555D9 /* en.lproj */,
 				1F62BC7D1BE5F1B8005555D9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +148,31 @@
 				1F62BCA31BE5F1B9005555D9 /* Info.plist */,
 			);
 			path = DropDownMenuUITests;
+			sourceTree = "<group>";
+		};
+		1F62BCAF1BE5F1F0005555D9 /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1FE8CE521BEA198D001C97B9 /* DropDownMenu.h */,
+				1FE8CE531BEA198D001C97B9 /* DropDownMenu.m */,
+			);
+			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+		1F62BCB31BE6043D005555D9 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				1F62BCB41BE6043D005555D9 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		1F62BCB71BE60443005555D9 /* zh-Hans.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				1F62BCB81BE60443005555D9 /* Localizable.strings */,
+			);
+			path = "zh-Hans.lproj";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +260,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 1F62BC701BE5F1B8005555D9;
 			productRefGroup = 1F62BC7A1BE5F1B8005555D9 /* Products */;
@@ -243,7 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F62BCBA1BE60443005555D9 /* Localizable.strings in Resources */,
 				1F62BC8C1BE5F1B8005555D9 /* LaunchScreen.storyboard in Resources */,
+				1F62BCB61BE6043D005555D9 /* Localizable.strings in Resources */,
 				1F62BC891BE5F1B8005555D9 /* Assets.xcassets in Resources */,
 				1F62BC871BE5F1B8005555D9 /* Main.storyboard in Resources */,
 			);
@@ -273,6 +311,7 @@
 				1F62BC841BE5F1B8005555D9 /* ViewController.m in Sources */,
 				1F62BC811BE5F1B8005555D9 /* AppDelegate.m in Sources */,
 				1F62BC7E1BE5F1B8005555D9 /* main.m in Sources */,
+				1FE8CE541BEA198D001C97B9 /* DropDownMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +361,22 @@
 				1F62BC8B1BE5F1B8005555D9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1F62BCB41BE6043D005555D9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F62BCB51BE6043D005555D9 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1F62BCB81BE60443005555D9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F62BCB91BE60443005555D9 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -496,6 +551,7 @@
 				1F62BCA81BE5F1B9005555D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F62BCA91BE5F1B9005555D9 /* Build configuration list for PBXNativeTarget "DropDownMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +560,7 @@
 				1F62BCAB1BE5F1B9005555D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F62BCAC1BE5F1B9005555D9 /* Build configuration list for PBXNativeTarget "DropDownMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +569,7 @@
 				1F62BCAE1BE5F1B9005555D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
